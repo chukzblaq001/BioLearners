@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BioLearn | Register</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f7f3;
+      margin: 0;
+      padding: 24px;
+    }
+    .card {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 24px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #0001;
+    }
+    h1 { color: #16835b; text-align: center; }
+    input, button {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 7px;
+    }
+    input { border: 1px solid #ccc; }
+    button {
+      background: #16835b;
+      color: white;
+      border: 0;
+      cursor: pointer;
+    }
+    #message { overflow-wrap: anywhere; }
+    a { color: #16835b; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Join BioLearn</h1>
+    <p>Create your student account.</p>
+
+    <form id="registerForm">
+      <input id="name" type="text"
+        placeholder="Full name" required maxlength="80">
+
+      <input id="email" type="email"
+        placeholder="Email address" required>
+
+      <input id="password" type="password"
+        placeholder="Password (at least 6 characters)"
+        minlength="6" required>
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <p id="message" role="status"></p>
+    <p>Already registered? <a href="login.html">Log in</a></p>
+    <p><a href="index.html">Back to BioLearn</a></p>
+  </main>
+
+  <script type="module" src="register.js"></script>
+</body>
+</html>
